@@ -1,0 +1,28 @@
+def length_converter():
+    print("Select the conversion option:")
+    print("1. Meters to Feet")
+    print("2. Feet to Meters")
+    print("3. Meters to Inches")
+    print("4. Inches to Meters")
+    choice = int(input("Enter your choice (1/2/3/4): "))
+
+    if choice == 1:
+        meters = float(input("Enter length in meters: "))
+        feet = meters * 3.281
+        print(f"{meters} meters is equal to {feet} feet")
+    elif choice == 2:
+        feet = float(input("Enter length in feet: "))
+        meters = feet / 3.281
+        print(f"{feet} feet is equal to {meters} meters")
+    elif choice == 3:
+        meters = float(input("Enter length in meters: "))
+        inches = meters * 39.37
+        print(f"{meters} meters is equal to {inches} inches")
+    elif choice == 4:
+        inches = float(input("Enter length in inches: "))
+        meters = inches / 39.37
+        print(f"{inches} inches is equal to {meters} meters")
+    else:
+        print("Invalid choice")
+
+length_converter()
